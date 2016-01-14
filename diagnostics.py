@@ -37,7 +37,7 @@ TEMP_STATUS = ["OK(0)", "WARM(1)", "HOT(2)", "FIRE(3)" ]
 memory = ALProxy("ALMemory", ROBOT_IP, ROBOT_PORT )
 motion = ALProxy("ALMotion", ROBOT_IP, ROBOT_PORT )
 
-motion.setStiffnesses("Body", 0.1 )
+motion.setStiffnesses("Body", 1 )
 
 print "Starting diagnostics of joints"
 
